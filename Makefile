@@ -21,4 +21,3 @@ clean-tmux:
 
 tmux: clean-tmux
 	ln -sfv $$HOME/.dotfiles/tmux/tmux.conf $$HOME/.tmux.conf
-	#tmux source-file $$HOME/.tmux.conf
