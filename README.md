@@ -5,8 +5,7 @@
 1. Clone the repo.
 ```
 $ cd $HOME
-$ git clone https://github.com/j1c/dotfiles.git
-$ mv dotfiles .dotfiles
+$ git clone https://github.com/j1c/dotfiles.git ~/.dotfiles
 $ cd .dotfiles
 ```
 

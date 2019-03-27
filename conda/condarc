@@ -1,0 +1,11 @@
+create_default_packages:
+  - pip
+  - numpy
+  - scipy
+  - scikit-learn
+  - jupyter
+#  - black
+channels:
+  - defaults
+  - conda-forge
+auto_activate_base: false

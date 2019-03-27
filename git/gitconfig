@@ -1,10 +1,10 @@
 [user]
-	name = j1c
-	email = jaewonc78@gmail.com
+    name = j1c
+    email = jaewonc78@gmail.com
 [core]
     excludesfile = ~/.dotfiles/git/ignore
     editor = vim
 [credential]
-	helper = cache
+    helper = cache
 [diff]
     algorithm = patience
