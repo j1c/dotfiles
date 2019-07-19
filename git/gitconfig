@@ -8,3 +8,5 @@
     helper = cache
 [diff]
     algorithm = patience
+[fetch]
+    prune = true
