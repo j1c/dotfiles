@@ -4,8 +4,6 @@
 [core]
     excludesfile = ~/.dotfiles/git/ignore
     editor = vim
-[credential]
-	helper = store
 [diff]
     algorithm = patience
 [fetch]
@@ -17,3 +15,5 @@
 	clean = git-lfs clean -- %f
 [submodule]
 	recurse = true
+[pull]
+	rebase = false
