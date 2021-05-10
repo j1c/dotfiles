@@ -17,3 +17,5 @@
 	recurse = true
 [pull]
 	rebase = false
+[credential]
+	helper = cache
