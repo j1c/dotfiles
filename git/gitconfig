@@ -9,13 +9,13 @@
 [fetch]
     prune = true
 [filter "lfs"]
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
-	clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
+    clean = git-lfs clean -- %f
 [submodule]
-	recurse = true
+    recurse = true
 [pull]
-	rebase = false
+    rebase = false
 [credential]
-	helper = cache
+    helper = cache
