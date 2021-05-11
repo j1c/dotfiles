@@ -3,8 +3,8 @@ create_default_packages:
   - numpy
   - scipy
   - scikit-learn
-  - jupyter
-#  - black
+  - jupyterlab
+  - black
 channels:
   - defaults
   - conda-forge
