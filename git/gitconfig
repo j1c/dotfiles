@@ -18,4 +18,4 @@
 [pull]
     rebase = false
 [credential]
-    helper = cache
+    helper = store
