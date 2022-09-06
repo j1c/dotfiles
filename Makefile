@@ -23,7 +23,7 @@ tmux: clean-tmux
 	ln -sfv $$HOME/.dotfiles/tmux/tmux.conf $$HOME/.tmux.conf
 
 clean-jupyter:
-	rm -rf $$HOME/.ipython/profile_default/startup/startup.py
+	rm -rf $$HOME/.ipython/profile_default/startup/startup_script.py
 
 jupyter: clean-jupyter
 	mkdir -p $$HOME/.ipython/profile_default/startup
