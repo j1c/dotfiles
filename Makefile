@@ -31,7 +31,10 @@ ipython: clean-ipython
 
 clean-jupyter:
 	rm -f $$HOME/.jupyter/lab/user-settings/@jupyterlab/notebook-extension/tracker.jupyterlab-settings
+	rm -f $$HOME/.jupyter/lab/user-settings/@jupyterlab/apputils-extension/themes.jupyterlab-settings
 
 jupyter: clean-jupyter
 	mkdir -p $$HOME/.jupyter/lab/user-settings/@jupyterlab/notebook-extension/
-	ln -sfv $$HOME/.dotfiles/jupyter/tracker.jupyterlab-settings $$HOME/.jupyter/lab/user-settings/@jupyterlab/notebook-extension/tracker.jupyterlab-settings
+	mkdir -p $$HOME/.jupyter/lab/user-settings/@jupyterlab/apputils-extension/
+	ln -sfv $$HOME/.dotfiles/jupyter/lab/user-settings/@jupyterlab/notebook-extension/tracker.jupyterlab-settings $$HOME/.jupyter/lab/user-settings/@jupyterlab/notebook-extension/tracker.jupyterlab-settings
+	ln -sfv $$HOME/.dotfiles/jupyter/lab/user-settings/@jupyterlab/apputils-extension/themes.jupyterlab-settings $$HOME/.jupyter/lab/user-settings/@jupyterlab/apputils-extension/themes.jupyterlab-settings
