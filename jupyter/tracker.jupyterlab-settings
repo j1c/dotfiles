@@ -1,0 +1,15 @@
+{
+    "codeCellConfig": {
+        "autoClosingBrackets": true,
+        "fontFamily": "JetBrains Mono",
+        "lineNumbers": true,
+        "codeFolding": true,
+        "showTrailingSpace": true
+    },
+    "markdownCellConfig": {
+        "autoClosingBrackets": true,
+        "fontFamily": "Roboto Mono",
+        "showTrailingSpace": true
+    },
+    "maxNumberOutputs": 10,
+}

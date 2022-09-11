@@ -30,8 +30,8 @@ ipython: clean-ipython
 	ln -sfv $$HOME/.dotfiles/ipython/startup_script.py $$HOME/.ipython/profile_default/startup/startup_script.py
 
 clean-jupyter:
-	rm -f $$HOME/.jupyter/nbconfig/notebook.json
+	rm -f $$HOME/.jupyter/lab/user-settings/@jupyterlab/notebook-extension/tracker.jupyterlab-settings
 
 jupyter: clean-jupyter
-	mkdir -p $$HOME/.dotfiles/jupyter/nbconfig
-	ln -sfv $$HOME/.dotfiles/jupyter/notebook.json $$HOME/.jupyter/nbconfig/notebook.json
+	mkdir -p $$HOME/.jupyter/lab/user-settings/@jupyterlab/notebook-extension/
+	ln -sfv $$HOME/.dotfiles/jupyter/tracker.jupyterlab-settings $$HOME/.jupyter/lab/user-settings/@jupyterlab/notebook-extension/tracker.jupyterlab-settings
