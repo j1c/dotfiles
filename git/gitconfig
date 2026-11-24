@@ -19,3 +19,5 @@
     rebase = false
 [credential]
     helper = store
+[datalad "extensions"]
+	load = next

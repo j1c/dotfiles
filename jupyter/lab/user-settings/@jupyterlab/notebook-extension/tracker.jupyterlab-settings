@@ -1,7 +1,7 @@
 {
     "codeCellConfig": {
         "autoClosingBrackets": true,
-        "fontFamily": "JetBrains Mono",
+        "fontFamily": null,
         "lineNumbers": true,
         "codeFolding": true,
         "showTrailingSpace": true
