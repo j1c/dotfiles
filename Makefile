@@ -1,8 +1,8 @@
-.PHONY: git tmux conda ipython jupyter
+.PHONY: git tmux conda ipython jupyter zsh
 
-all: git conda tmux ipython jupyter
+all: git conda tmux ipython jupyter zsh
 
-clean: clean-git clean-conda clean-tmux clean-jupyter clean-ipython
+clean: clean-git clean-conda clean-tmux clean-jupyter clean-ipython clean-zsh
 
 clean-git:
 	rm -f $$HOME/.gitconfig
@@ -15,6 +15,16 @@ clean-conda:
 
 conda: clean-conda
 	ln -sfv $$HOME/.dotfiles/conda/condarc $$HOME/.condarc
+
+clean-zsh:
+	rm -f $$HOME/.zshrc
+	for f in $$HOME/.dotfiles/zsh/*; do rm -f $$HOME/.zsh/$$(basename $$f); done
+
+zsh: clean-zsh
+	git -C $$HOME/.dotfiles submodule update --init zsh/spaceship-prompt
+	ln -sfv $$HOME/.dotfiles/zsh/.zshrc $$HOME/.zshrc
+	mkdir -p $$HOME/.zsh
+	for f in $$HOME/.dotfiles/zsh/*; do ln -sfnv $$f $$HOME/.zsh/; done
 
 clean-tmux:
 	rm -f $$HOME/.tmux.conf
